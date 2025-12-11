@@ -1,0 +1,54 @@
+# Node
+node_modules/
+
+# Build output
+dist/
+build/
+.output/
+
+# Vite cache
+.vite/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Parcel, Next, and other caches
+.parcel-cache/
+.cache/
+
+# Optional npm cache
+.npm
+
+# Optional lock files (uncomment if you don't want lock files tracked)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Build artifacts
+*.tgz
+
