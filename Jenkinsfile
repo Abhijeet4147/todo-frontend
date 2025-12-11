@@ -15,7 +15,7 @@ pipeline {
                 steps {
                     script {
                         def frontendImage = "${DOCKER_USERNAME}/frontend:${BUILD_NUMBER}"
-                        sh "docker build -t ${frontendImage} ."
+                        sh "docker build --no-cache -t ${frontendImage} ."
 
                         echo 'Pushing to DockerHub'
                         withCredentials([usernamePassword(credentialsId: "${DOCKERHUB_CREDENTIALS}", usernameVariable: 'USERNAME',passwordVariable:'PASSWORD')]) {
