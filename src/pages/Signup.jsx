@@ -82,7 +82,7 @@ const Signup = () => {
             {loading ? 'Signing up...' : 'Sign Up'}
           </button>
           {error && <div className="text-red-600 text-center">{error}</div>}
-          {success && <div className="text-purple-600 text-center">{success}</div>}
+          {success && <div className="text-yellow-600 text-center">{success}</div>}
         </form>
         <div className="mt-6 text-gray-500 text-sm">Already have an account?... <Link to="/login" className="text-blue-600 font-semibold hover:underline">Log In</Link></div>
       </div>
