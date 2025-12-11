@@ -48,7 +48,7 @@ pipeline {
 
                             echo 'Committiog changes to manifest repo.'
                             sh 'git add .'
-                            sh "git commit -m 'Update image tag to build ${BUILD_NUMBER}'"
+                            sh "git commit -m 'Update image tag to build ${BUILD_NUMBER}' || echo 'No changes to commit'"
 
                             withCredentials([usernamePassword(credentialsId:"${GIT_CREDENTIALS}",usernameVariable:'GIT_USERNAME',passwordVariable:'GIT_TOKEN')]){
                             sh """
