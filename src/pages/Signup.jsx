@@ -84,7 +84,7 @@ const Signup = () => {
           {error && <div className="text-red-600 text-center">{error}</div>}
           {success && <div className="text-yellow-600 text-center">{success}</div>}
         </form>
-        <div className="mt-6 text-gray-500 text-sm">Already have an account?... <Link to="/login" className="text-blue-600 font-semibold hover:underline">Log In</Link></div>
+        <div className="mt-6 text-gray-500 text-sm">Already have an account test1?... <Link to="/login" className="text-blue-600 font-semibold hover:underline">Log In</Link></div>
       </div>
     </div>
   );
